@@ -1,0 +1,16 @@
+export type IconName =
+  | "phone"
+  | "wifi"
+  | "card"
+  | "bolt"
+  | "drop"
+  | "tv"
+  | "gamepad"
+  | "shield"
+  | "bank"
+  | "check"
+  | "spinner"
+  | "chevronLeft"
+  | "chevronDown"
+  | "shieldCheck"
+  | "zap";
