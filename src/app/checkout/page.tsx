@@ -2,12 +2,17 @@ import Link from "next/link";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CheckoutClient } from "@/components/CheckoutClient";
+import { getCatalog } from "@/lib/db/server";
 
 export const metadata = {
   title: "Pembayaran · Chainovaku",
 };
 
-export default function CheckoutPage() {
+export default async function CheckoutPage() {
+  const catalog = await getCatalog();
+  const brand = catalog.data?.brand ?? null;
+  const qrisMethodId =
+    catalog.data?.methods.find((method) => method.name === "QRIS")?.id ?? null;
   return (
     <>
       <Header />
@@ -26,7 +31,11 @@ export default function CheckoutPage() {
           </p>
         </div>
 
-        <CheckoutClient />
+        <CheckoutClient
+          brandSlug={brand?.slug ?? ""}
+          qrisMethodId={qrisMethodId}
+          qrisImageUrl={brand?.qris_image_url ?? null}
+        />
       </main>
 
       <Footer />

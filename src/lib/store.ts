@@ -9,6 +9,11 @@ export type Order = {
   admin: number;
   lines: OrderLine[];
   type: "prepaid" | "game" | "bill";
+  /** data Supabase untuk checkout */
+  dbServiceId?: string;
+  dbProductId?: string;
+  target?: string;
+  input?: Record<string, string>;
 };
 
 export type SavedOrder = {

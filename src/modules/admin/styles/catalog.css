@@ -1,0 +1,388 @@
+/* Style halaman katalog, voucher, dan pengaturan. */
+
+/* ============ produk & harga ============ */
+
+.admin-root .adm-produk-layout {
+  align-items: flex-start;
+}
+
+.admin-root .adm-svc-card {
+  display: flex;
+  flex: 1 1 300px;
+  flex-direction: column;
+  gap: 6px;
+  padding: 22px;
+}
+
+.admin-root .adm-svc-label {
+  padding: 6px 10px 10px;
+}
+
+.admin-root .adm-svc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.admin-root .adm-svc-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  min-height: 64px;
+  padding: 8px 12px;
+  border: 1px solid transparent;
+  border-radius: 14px;
+  background: #fff;
+  color: inherit;
+  text-align: left;
+}
+
+.admin-root .adm-svc-item:hover {
+  background: #f8fafc;
+}
+
+.admin-root .adm-svc-item.is-active {
+  border-color: var(--adm-ink);
+  background: #f8fafc;
+}
+
+.admin-root .adm-ini {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: var(--adm-soft);
+  color: var(--adm-ink2);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.admin-root .adm-svc-item.is-active .adm-ini {
+  background: var(--adm-ink);
+  color: #fff;
+}
+
+.admin-root .adm-svc-meta {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.admin-root .adm-svc-meta b {
+  overflow: hidden;
+  font-size: 15px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.admin-root .adm-svc-meta small {
+  color: var(--adm-muted);
+  font-size: 13px;
+}
+
+.admin-root .adm-svc-detail {
+  display: flex;
+  flex: 3 1 560px;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.admin-root .adm-svc-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.admin-root .adm-svc-head h2 {
+  font-size: 26px;
+}
+
+.admin-root .adm-svc-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.admin-root .adm-product-table {
+  overflow: hidden;
+  border: 1px solid var(--adm-line);
+  border-radius: 18px;
+}
+
+.admin-root .adm-ptab {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) repeat(3, minmax(0, 1fr)) 54px;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 20px;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 15px;
+}
+
+.admin-root .adm-ptab:last-child {
+  border-bottom: 0;
+}
+
+.admin-root .adm-ptab-head {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--adm-line);
+  color: var(--adm-muted);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.admin-root .adm-ptab-head > span:last-child {
+  text-align: right;
+}
+
+.admin-root .adm-product-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  color: inherit;
+  font-weight: 600;
+  text-align: left;
+}
+
+.admin-root .adm-product-name span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.admin-root .adm-product-name svg {
+  flex: none;
+  color: var(--adm-muted);
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.admin-root .adm-ptab:hover .adm-product-name svg,
+.admin-root .adm-product-name:focus-visible svg {
+  opacity: 1;
+}
+
+.admin-root .adm-box {
+  display: flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 10px;
+  overflow: hidden;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.admin-root .adm-box-ro {
+  border-color: var(--adm-line);
+  background: #f8fafc;
+  color: var(--adm-ink2);
+  font-weight: 500;
+}
+
+.admin-root .adm-profit-number {
+  color: var(--adm-green);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.admin-root .adm-profit-number.is-loss {
+  color: var(--adm-red);
+}
+
+.admin-root .adm-toggle-cell {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.admin-root .adm-table-note {
+  margin: 0;
+  font-size: 14px;
+}
+
+.admin-root .adm-bill-settings {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.admin-root .adm-form-grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.admin-root .adm-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.admin-root .adm-service-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.admin-root .adm-form-error {
+  padding: 12px 14px;
+  border: 1px solid #fecaca;
+  border-radius: 12px;
+  background: #fef2f2;
+  color: #991b1b;
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.admin-root .adm-check-inline {
+  align-self: end;
+  min-height: 50px;
+}
+
+.admin-root .adm-fields-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid var(--adm-line);
+}
+
+.admin-root .adm-fields-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.admin-root .adm-fields-head b {
+  font-size: 15px;
+}
+
+.admin-root .adm-field-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.4fr) auto 40px;
+  gap: 10px;
+  align-items: end;
+  padding: 12px;
+  border: 1px solid var(--adm-line);
+  border-radius: 14px;
+  background: #f8fafc;
+}
+
+.admin-root .adm-field-row .adm-check {
+  min-height: 50px;
+}
+
+.admin-root .adm-profit-preview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid #bbf7d0;
+  border-radius: 14px;
+  background: #f0fdf4;
+  color: #14532d;
+  font-size: 14px;
+}
+
+.admin-root .adm-profit-preview b {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.admin-root .adm-profit-preview.is-loss {
+  border-color: #fecaca;
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+@media (max-width: 1000px) {
+  .admin-root .adm-produk-layout {
+    flex-direction: column;
+  }
+
+  .admin-root .adm-svc-card,
+  .admin-root .adm-svc-detail {
+    flex: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .admin-root .adm-svc-head h2 {
+    font-size: 22px;
+  }
+
+  .admin-root .adm-svc-head {
+    flex-direction: column;
+  }
+
+  .admin-root .adm-ptab {
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) 54px;
+    padding: 12px 14px;
+  }
+
+  .admin-root .adm-ptab > :nth-child(2),
+  .admin-root .adm-ptab > :nth-child(4) {
+    display: none;
+  }
+
+  .admin-root .adm-form-grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-root .adm-field-row {
+    grid-template-columns: minmax(0, 1fr) 40px;
+  }
+
+  .admin-root .adm-field-row .adm-field {
+    grid-column: 1 / -1;
+  }
+
+  .admin-root .adm-field-row .adm-icon-btn {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: end;
+  }
+}
+
+@media (max-width: 640px) {
+  .admin-root .adm-ptab {
+    gap: 8px;
+    font-size: 13.5px;
+  }
+
+  .admin-root .adm-ptab-head {
+    font-size: 11px;
+    letter-spacing: 0.05em;
+  }
+
+  .admin-root .adm-box {
+    padding: 0 8px;
+    font-size: 12.5px;
+  }
+
+  .admin-root .adm-svc-card {
+    padding: 16px;
+  }
+
+  .admin-root .adm-svc-detail {
+    padding: 16px;
+  }
+}

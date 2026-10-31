@@ -6,6 +6,7 @@ import { BuyWidget } from "@/components/BuyWidget";
 import { CopyButton } from "@/components/CopyButton";
 import { HeroKinetic } from "@/components/HeroKinetic";
 import { services, serviceBySlug } from "@/lib/services";
+import { getStorefront } from "@/lib/catalog-hydrate";
 import type { Service } from "@/lib/services";
 
 const FAQ = [
@@ -39,7 +40,9 @@ function ServiceTile({ service }: { service: Service }) {
   );
 }
 
-export default function Home() {
+export default async function Home() {
+  const storefront = await getStorefront();
+
   return (
     <>
       <Header variant="home" />
@@ -107,7 +110,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <BuyWidget />
+            <BuyWidget services={storefront.services} games={storefront.games} />
           </div>
         </section>
 

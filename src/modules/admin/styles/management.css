@@ -1,0 +1,423 @@
+/* Style voucher dan pengaturan. */
+
+/* ============ voucher ============ */
+
+.admin-root .adm-voucher-layout {
+  align-items: flex-start;
+}
+
+.admin-root .adm-voucher-list {
+  display: flex;
+  flex: 3 1 560px;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+.admin-root .adm-voucher-form-card {
+  flex: 2 1 360px;
+  min-width: 0;
+}
+
+.admin-root .adm-voucher-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.admin-root .adm-voucher-form-head h2 {
+  font-size: 22px;
+}
+
+.admin-root .adm-voucher-form-head p {
+  margin-top: 4px;
+}
+
+.admin-root .adm-voucher-type .adm-seg-btn {
+  flex: 1;
+  justify-content: center;
+}
+
+.admin-root .adm-voucher-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+  transition: border-color 0.15s ease;
+}
+
+.admin-root .adm-voucher-card.is-selected {
+  border-color: var(--adm-ink);
+}
+
+.admin-root .adm-voucher-main {
+  display: flex;
+  flex: 1 1 200px;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.admin-root .adm-voucher-code-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-root .adm-voucher-code {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  overflow-wrap: anywhere;
+}
+
+.admin-root .adm-voucher-rule {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.admin-root .adm-voucher-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.admin-root .adm-voucher-stats > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.admin-root .adm-voucher-stats .adm-label {
+  font-size: 11px;
+}
+
+.admin-root .adm-voucher-stats b {
+  font-size: 20px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.admin-root .adm-voucher-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-root .adm-service-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  padding: 12px 14px;
+  border: 1px solid var(--adm-line);
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+.admin-root .adm-picker-item {
+  min-height: 28px;
+}
+
+.admin-root .adm-voucher-usage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  padding: 12px 14px;
+  border: 1px solid var(--adm-line);
+  border-radius: 12px;
+  background: #f8fafc;
+  color: var(--adm-muted);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.admin-root .adm-voucher-usage b {
+  color: var(--adm-ink);
+  font-weight: 700;
+}
+
+/* ============ pengaturan ============ */
+
+.admin-root .adm-settings-grid {
+  row-gap: 20px;
+}
+
+.admin-root .adm-settings-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+}
+
+.admin-root .adm-card-intro {
+  margin: 6px 0 12px;
+  font-size: 14px;
+}
+
+.admin-root .adm-pm-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-root .adm-pm-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+  padding: 12px 0;
+  border-top: 1px solid #f1f5f9;
+}
+
+.admin-root .adm-pm-row:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.admin-root .adm-pm-logo {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--adm-soft);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.admin-root .adm-pm-main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.admin-root .adm-pm-main > b {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.admin-root .adm-pm-fee {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  color: var(--adm-muted);
+  font-size: 12.5px;
+  font-weight: 500;
+}
+
+.admin-root .adm-input-group-sm {
+  min-height: 36px;
+  padding: 0 9px;
+  border-radius: 9px;
+}
+
+.admin-root .adm-input-group-sm input {
+  width: 74px;
+  min-height: 34px;
+  padding: 0 4px;
+  font-size: 13px;
+}
+
+.admin-root .adm-qris-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-root .adm-qris-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  margin-top: 16px;
+}
+
+.admin-root .adm-qris-preview {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  overflow: hidden;
+  border: 1px dashed #cbd5e1;
+  border-radius: 16px;
+  background: #f8fafc;
+  color: var(--adm-muted);
+  font-size: 12px;
+  text-align: center;
+}
+
+.admin-root .adm-qris-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.admin-root .adm-qris-actions {
+  display: flex;
+  flex: 1 1 180px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+}
+
+.admin-root .adm-file-name {
+  font-size: 13px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.admin-root .adm-wa-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.admin-root .adm-wa-example {
+  white-space: pre-line;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.admin-root .adm-brand-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.admin-root .adm-logo-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-root .adm-logo-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.admin-root .adm-brand-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+
+.admin-root .adm-rules-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.admin-root .adm-rule-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.admin-root .adm-rule-row:first-of-type {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.admin-root .adm-rule-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.admin-root .adm-rule-copy b {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.admin-root .adm-rule-copy small {
+  color: var(--adm-muted);
+  font-size: 13px;
+}
+
+.admin-root .adm-rule-row .adm-select {
+  width: auto;
+  min-width: 150px;
+  min-height: 44px;
+}
+
+@media (max-width: 1100px) {
+  .admin-root .adm-voucher-layout {
+    flex-direction: column;
+  }
+
+  .admin-root .adm-voucher-list,
+  .admin-root .adm-voucher-form-card {
+    flex: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .admin-root .adm-voucher-card {
+    gap: 16px;
+  }
+
+  .admin-root .adm-voucher-stats {
+    gap: 20px;
+  }
+
+  .admin-root .adm-voucher-actions {
+    width: 100%;
+  }
+
+  .admin-root .adm-brand-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-root .adm-qris-preview {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media (max-width: 640px) {
+  .admin-root .adm-voucher-code {
+    font-size: 19px;
+  }
+
+  .admin-root .adm-voucher-stats > div {
+    flex: 1 1 110px;
+  }
+
+  .admin-root .adm-voucher-stats b {
+    font-size: 17px;
+  }
+
+  .admin-root .adm-pm-row {
+    flex-wrap: wrap;
+  }
+
+  .admin-root .adm-pm-main {
+    flex: 1 1 140px;
+  }
+
+  .admin-root .adm-rule-row .adm-select {
+    width: 100%;
+  }
+}

@@ -1,6 +1,6 @@
 import type { IconName } from "./icons";
 
-export type Item = [string, string, number];
+export type Item = [string, string, number, string?];
 
 export type Field = {
   id: string;
@@ -23,6 +23,8 @@ export type Service = {
   items: Item[] | null;
   admin: number | null;
   icon: { bg: string; stroke: string; name: IconName };
+  /** id layanan Supabase (diisi saat hidrasi) */
+  dbServiceId?: string;
   blurb: string;
   how: string[];
   faq: [string, string][];
